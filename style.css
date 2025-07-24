@@ -34,10 +34,16 @@ header{
 }
 .nav-link{
     text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #424242;
+
 }
 .banner{
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 102px;
     align-items: center;
 }
 .banner-item{
@@ -66,6 +72,7 @@ header{
     border: none;
     border-radius: 8px;
     padding: 20px 25px;
+    margin-top: 32px;
 }
 .banner-image{
     width: 100%;
@@ -236,10 +243,11 @@ header{
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    filter: grayscale(100%);
 }
 .last{
     max-width: 1440px;
-    height: 100px; 
+    height: 100px;  
     margin: 130px auto;
     /* text-align: center; */
     /* align-items: center; */
@@ -247,7 +255,8 @@ header{
 }
 .last-text{
     /* padding: 38 auto; */
-    margin: 38px auto;
+    margin: auto; 
+    margin-top: 38px;
     font-family: "Work Sans", sans-serif;
     font-size: 1.25rem;
     color: #424242;
