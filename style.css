@@ -106,6 +106,156 @@ header{
     color: #727272;
     font-size: 1rem;
 }
+/* property */
+.property{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    /* grid-template-columns: repeat(2,586px,800px); */
+}
+.pro-div{
+    max-width: 586px;
+}
+.pro-title{
+    font-family: "Work Sans", sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-left: 21px;
+}
+.pro-detail{
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    color: #727272;
+    margin-top: 24px;
+}
+.pro-card{
+    max-width: 586px;
+    background-color: #FFFFFF;
+    padding: 30px 42px 30px 30px;
+    margin-top: 20px;
+}
+.pro-card-title{
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.pro-card-detail{
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    color: #727272;
+}
+.div-image{
+    max-width: 800px;
+    margin-left: 54px;
+}
+.image2{
+    width: 100%;
+    margin-left: 92px;
+
+}
+/* facts */
+.facts{
+    max-width: 1440px;
+    margin: 130px auto;
+}
+.facts-title{
+     font-family: "Work Sans", sans-serif;
+     font-size: 2.8rem;
+     font-weight: bold;
+}
+.facts-detail{
+    max-width: 542px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    color: #727272;
+    margin-top: 24px;
+}
+.container{
+    max-width: 1340px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* justify-content: space-between; */
+}
+.facts-card{
+    width: 241px;
+    height: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    margin-right: 120px;
+    /* align-items: center; */
+    /* padding: 50px; */
+}
+.png{
+    width: 45px;
+    height: 45px;
+    margin-top: 45px;
+    margin-left: 91px;
+}
+.facts-card-sub{
+    /* width: 150px; */
+    /* padding: 100px auto 50 auto; */
+    /* margin-left: 42px; */
+    margin: 9px auto;
+    text-align: center;
+}
+.digit{
+    font-family: "Work Sans", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600px;
+    /* margin-top: 9px; */
+}
+.details{
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600px;
+    color: #727272;
+    margin-top: 5px;
+}
+/* footer */
+.footer-head{
+    max-width: 542px;
+    margin: 180px auto;
+    text-align: center;
+}
+.head-title{
+    font-family: "Work Sans", sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.head-detail{
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    color: #727272;
+    margin-top: 24px;
+}
+.footer-image{
+    max-width: 1440px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.last{
+    max-width: 1440px;
+    height: 100px; 
+    margin: 130px auto;
+    /* text-align: center; */
+    /* align-items: center; */
+    background-color: #FFF4E7;
+}
+.last-text{
+    /* padding: 38 auto; */
+    margin: 38px auto;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    color: #424242;
+    text-align: center;
+    max-width: 620px;
+    height: 23px;
+}
+
 
 
 
@@ -113,7 +263,7 @@ header{
 
 /* responsive */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-flex, .feature{
+    .navbar, .nav-flex, .feature, .property{
         flex-direction: column;
     }
     .feature-image{
@@ -122,6 +272,74 @@ header{
     .feature-detail{
         margin-left: 30px;
     }
+    .image2{
+        margin-left: 20px;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 100px; 
+        gap: 20px;
+    }
+    .facts-title{
+        margin-left: 20px;
+    }
+    .facts-detail{
+        margin-left: 20px;
+    }
+    .footer-head{
+        margin-left: 10px;
+        
+    }
+    .footer-image{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 100px;
+        gap: 20px;
+    }
+    .last-text{
+        width: 100%;
+    }
 }
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .feature, .property{
+        flex-direction: column;
+    }
+    .feature-detail{
+        margin: 40px auto;
+    }
+    .image2{
+        margin: 20px auto;
+    }
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 100px; 
+        gap: 20px;
+    }
+    .facts-title{
+        margin-left: 20px;
+    }
+    .facts-detail{
+        margin-left: 20px;
+    }
+    .footer-head{
+        margin-left: 100px;
+        
+    }
+    .footer-image{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 100px;
+        gap: 40px;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 
